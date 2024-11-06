@@ -12,7 +12,7 @@ steps:
     projects: '**/src/JornadaMilhas.API/JornadaMilhas.API.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
-- task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2 
   displayName: 'Testes de Unidade'
   inputs:
     command: test
